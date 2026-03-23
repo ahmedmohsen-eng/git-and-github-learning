@@ -1,0 +1,133 @@
+git --version
+git --help
+git help init
+
+git config --global user.name "ahmedmohsen-eng"
+git config --global user.email "ahmed.mohsen.ce@gmail.com"
+git config --global core.editor "notepad"
+touch test.txt
+edit
+notepad test.txt
+git config --global core.editor "Atom"
+Atom test.txt
+git config --list
+
+
+mkdir shop
+cd shop
+git init
+ls
+ls -A
+cd .git
+ls -A
+cd ..
+touch lists.txt
+rm lists.txt
+touch list.txt
+git status
+git add list.txt
+git status
+git commit -m "Create shopping list"
+git status
+git log
+
+
+
+notepad list.txt
+=================> then adding some vegetables and fruits in the file
+git status
+git diff
+git add list.txt
+git status
+git commit -m "Add fruit and vegetables"
+git log
+
+notepad list.txt
+================> then adding some sections of food
+git status
+git diff
+git add list.txt
+git status
+git commit -m "Add fruit and vegetables"
+git log -1 ======> most recent one
+
+notepad list.txt
+================> then adding sussage under meat section
+git status
+git diff
+git diff --staged =====>difference between staged area and our previous copy
+git commit -m "adding sussage under meat"
+git log
+
+
+
+git diff 8bdeb9a list.txt
+	_________ =========> here write the version of file you want to compare with
+notepad list.txt
+git log
+git checkout HEAD~3 list.txt =========> getting back to -3 steps version
+notepad list.txt
+git checkout HEAD list.txt =======> getting back to the last version
+notepad list.txt
+
+
+
+
+notepad list.txt
+=============> writing sometypes under the wrong section of food
+git add list.txt
+git status
+git diff --staged  ========> We notice writing wrong things
+git reset list.txt
+git diff--staged
+=================>if we used add it returns back
+git add list.txt
+git commit -m "your message"
+notepad list.txt  =================> we notice mistakes
+git log
+git reset HEAD~1 --soft  =======> removes the commit but do not change the staged file
+		 --mixed =======> removes the commit and also makes the changes unstaged
+		 --hard  =======> removes the changes we made to the file
+
+
+
+
+
+
+git branch dairy
+git branch
+git meat
+git branch
+git checkout dairy
+notepad list.txt
+=================> add dairy milks under the dairy section
+git add list.txt
+git commit -m "update dairy"
+git checkout master 
+notepad list.txt  ===================> we find that it is not changed in the main file
+git checkout meat
+git merge meat
+notepad list.txt ==============> it is merged with the master version
+
+
+
+
+
+git help remote
+git remote add origin https://github.com/PythonJournalist/git_practice.git
+git remote -v =========>
+git push origin master
+==========> enter usname and password
+
+
+pwd
+cd ..
+mkdir imaging_data
+cd imaging_data/
+git clone https://github.com/sfikas/medical-imaging-datasets.git
+
+
+
+=========> Commands to research:
+=============> git fetch     
+=============> git pull
