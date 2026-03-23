@@ -1,2 +1,2 @@
 # git-and-github-learning
-Hands on practice in learning version control commands and workflow (git)
+Hands on practice while learning version control commands and workflow (git)
